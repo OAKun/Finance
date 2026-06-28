@@ -50,7 +50,7 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 1. 进入 [Finance 最新版发布页](https://github.com/OAKun/Finance/releases/tag/latest)。
 2. 下载 `Finance.exe`。
 3. 将程序放在桌面、用户文档或其他具有写入权限的普通文件夹中。
-4. 双击运行。首次启动会在程序目录自动生成 `user.config`，并打开“参数”窗口供用户设置。
+4. 双击运行。首次启动会在程序目录自动生成 `user.config`，并打开“数据”窗口供用户设置数据文件位置。
 
 适用于 Windows 64 位环境，无需安装 Python 或其他运行库。
 
