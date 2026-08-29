@@ -4,6 +4,8 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 
 将收入、支出和余额记录保存在本地 Excel 文件中，同时提供查询、管理、统计图表和数据备份功能。
 
+产品主页：[finance.oakun.cn](https://finance.oakun.cn/) —— 提供 Windows / Android 下载入口，网页版可直接在线使用（[finance.oakun.cn/app/](https://finance.oakun.cn/app/)）。
+
 ## 界面预览
 
 ![Finance 数据录入与财务概览](images/data-entry.png)
@@ -64,7 +66,7 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 
 ## Android 版
 
-Android 版是同一 Finance 账本的手机入口：一个轻量原生壳加载 `finance.oakun.cn` 网页，登录、记账、统计与电脑端使用同一 CloudBase 账号和同一套数据，账本仍由电脑端统一提交。
+Android 版是同一 Finance 账本的手机入口：一个轻量原生壳加载 `finance.oakun.cn/app/` 网页版，登录、记账、统计与电脑端使用同一 CloudBase 账号和同一套数据，账本仍由电脑端统一提交。
 
 1. 进入 [Finance 最新版发布页](https://github.com/OAKun/Finance/releases/latest)。
 2. 下载 `Finance.apk` 并安装；系统询问时允许"安装未知应用"。
