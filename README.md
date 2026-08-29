@@ -62,6 +62,16 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 
 每次更新的具体内容请查看 [Finance Releases](https://github.com/OAKun/Finance/releases)。
 
+## Android 版
+
+Android 版是同一 Finance 账本的手机入口：一个轻量原生壳加载 `finance.oakun.cn` 网页，登录、记账、统计与电脑端使用同一 CloudBase 账号和同一套数据，账本仍由电脑端统一提交。
+
+1. 进入 [Finance 最新版发布页](https://github.com/OAKun/Finance/releases/latest)。
+2. 下载 `Finance.apk` 并安装；系统询问时允许"安装未知应用"。
+3. 打开 Finance，使用已有账号登录即可。
+
+Android 壳内置自动更新：启动时会核对最新版本清单，发现新版后提示下载，经 SHA-256 校验后拉起系统安装器。网页功能更新无需升级 APK，只有原生壳变化才会发新版本。
+
 ## 数据与配置
 
 - 默认数据文件名为 `finance_records.xlsx`。
