@@ -65,6 +65,25 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 
 每次更新的具体内容请查看 [Finance Releases](https://github.com/OAKun/Finance/releases)。
 
+### 中国大陆下载镜像（CNB）
+
+发布脚本支持将同一批 `Finance.exe`、`Finance.apk`、更新清单和校验文件同步到
+CNB Release。配置 CNB 后，主页与 Android 更新检查会优先使用 CNB，GitHub
+仍作为备用来源；未配置时保持 GitHub-only 行为。
+
+发布脚本默认目标为 `oakun/Finance`。令牌可以放在发布机环境变量中，或写入
+`release/cnb-token.txt`（该文件会被自动排除，不要提交到仓库）：
+
+```powershell
+$env:CNB_REPO_SLUG = "组织/仓库"
+$env:CNB_TOKEN = "你的 CNB 访问令牌"
+py publish_github.py
+```
+
+当前 CNB 仓库路径为 `oakun/Finance`，首次发布前需先在 CNB 初始化 `main` 分支；
+默认下载地址为：
+`https://cnb.cool/<组织>/<仓库>/-/releases/latest/download/<文件名>`。
+
 ## Android 版
 
 Android 版是同一 Finance 账本的手机入口：一个轻量原生壳加载 `finance.oakun.cn/app/` 网页版，登录、记账、统计与电脑端使用同一 CloudBase 账号和同一套数据，账本仍由电脑端统一提交。
