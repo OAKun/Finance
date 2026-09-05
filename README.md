@@ -72,7 +72,7 @@ CNB Release。配置 CNB 后，主页与 Android 更新检查会优先使用 CNB
 仍作为备用来源；未配置时保持 GitHub-only 行为。
 
 发布脚本默认目标为 `oakun/Finance`。令牌可以放在发布机环境变量中，或写入
-`release/cnb-token.txt`（该文件会被自动排除，不要提交到仓库）：
+`release/cnb-token.local`（本地令牌文件，会被自动排除，不要提交或上传）：
 
 ```powershell
 $env:CNB_REPO_SLUG = "组织/仓库"
