@@ -68,8 +68,14 @@ Finance 是一个面向个人日常记账和财务回顾的 Windows 免安装程
 ### 中国大陆下载镜像（CNB）
 
 发布脚本支持将同一批 `Finance.exe`、`Finance.apk`、更新清单和校验文件同步到
-CNB Release。配置 CNB 后，主页与 Android 更新检查会优先使用 CNB，GitHub
-仍作为备用来源；未配置时保持 GitHub-only 行为。
+CNB Release。**CNB 是国内首选更新源，GitHub 只是同一发布地址的次选备份**——
+GitHub 对国内用户（无代理）经常不可达，CNB 才是国内主通道。配置 CNB 后，
+主页与 Android 更新检查按"CNB 优先、GitHub 兜底"的顺序读取；未配置时保持
+GitHub-only 行为。
+
+Android 侧特别注意：`assembleRelease` **必须**带
+`-PcnbRepoSlug=oakun/Finance`，漏传会导致 APK 只剩 GitHub 源、国内用户
+"检查更新"全部失败（2026-09-05 事故，勿再犯）。
 
 发布脚本默认目标为 `oakun/Finance`。令牌可以放在发布机环境变量中，或写入
 `release/cnb-token.local`（本地令牌文件，会被自动排除，不要提交或上传）：
